@@ -164,12 +164,8 @@ header{
 
 
  /* main  */
-footer{
-    position: relative;
-}
-.footer-svg{
-    position: absolute;
-    bottom: -20px;
+main{
+    /* overflow-x: hidden; */
 }
 .main-cont{
     position: relative;
@@ -178,6 +174,7 @@ footer{
     height: 100%;
     margin-bottom: 400px;
     /* height: 700px; */
+    overflow-x: hidden;
 
 }
 .content-main{
@@ -327,7 +324,14 @@ footer{
 }
 
 
-
+footer{
+    position: relative;
+    overflow-x: hidden;
+}
+.footer-svg{
+    position: absolute;
+    bottom: -20px;
+}
 
 
 
