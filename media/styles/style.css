@@ -164,8 +164,8 @@ header{
 
 
  /* main  */
-main{
-    /* overflow-x: hidden; */
+body{
+    overflow-x: hidden;
 }
 .main-cont{
     position: relative;
@@ -174,7 +174,6 @@ main{
     height: 100%;
     margin-bottom: 400px;
     /* height: 700px; */
-    overflow-x: hidden;
 
 }
 .content-main{
