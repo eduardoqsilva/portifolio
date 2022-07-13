@@ -309,7 +309,7 @@ footer{
 }
 .contact-qrcode{
     /* background-color: #2B56FF; */
-    background-image: url("media/icons/Qrcode.png");
+    background-image: url("../media/icons/Qrcode.png");
     background-size: contain;
     background-repeat: no-repeat;
     width: 200px;
