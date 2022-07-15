@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="media/styles/animation.css">
     <link rel="shortcut icon" href="media/icons/logo.png" type="image/x-icon">
 </head>
+
 <body>
     <header>
         <div class="wrapper">
@@ -39,13 +41,13 @@
             </ul>
         </nav>
         <div class="content-header">
-            
+
             <div class="content-text">
                 <section id="header-text">
                     <h3 id="text-header01">Olá, meu nome é</h2>
-                    <h1 id="text-header02">Eduardo Queiroz</h1>
-                    <h2 id="text-header03">FRONT-END DEVELOPER</h2>
-                    <a href="#"><button id="header-button">DOWNLOAD CV</button></a>
+                        <h1 id="text-header02">Eduardo Queiroz</h1>
+                        <h2 id="text-header03">FRONT-END DEVELOPER</h2>
+                        <a href="#"><button id="header-button">DOWNLOAD CV</button></a>
                 </section>
             </div>
         </div>
@@ -54,70 +56,94 @@
             <a href="#"><img src="media/icons/icon-instagran-white.png" alt="instagram"></a>
         </div>
     </header>
-    <main class="main-cont">
+    <main>
+        <div class="wave">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"
+                preserveAspectRatio="none">
+                <path fill="#ffffff" fill-opacity="1"
+                    d="M0,96L60,85.3C120,75,240,53,360,53.3C480,53,600,75,720,90.7C840,107,960,117,1080,112C1200,107,1320,85,1380,74.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+                    style="--darkreader-inline-fill:#181a1b;"></path>
+            </svg>
+        </div>
         <div class="decals">
             <img class="circ-main" src="media/svg/decals/element-circ.svg">
             <img class="split-main" src="media/svg/decals/element-plit.svg" alt="">
         </div>
-        <div class="wave">
-            <img src="media/svg/decals/wave.svg">
-        </div>
-        <div class="content-main">
-            <div class="container">
+        <div class="main-cont">
+            <div class="content-main">
+                <div class="container">
+                    <h1 id="sobre">SOBRE MIM</h1>
+                    <div class="sobre">
+                        <article class="sobreText">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum itaque eum consequuntur
+                                voluptatum ad, eos dignissimos delectus accusamus, temporibus repellendus vel officia
+                                minus perferendis optio earum unde ipsum quisquam voluptatem! Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Laudantium alias culpa ex nihil. Aut inventore beatae ab
+                                vero facilis reprehenderit eos vel alias id nulla consequatur dignissimos, est, dolorem
+                                molestiae?</p>
+                        </article>
 
-                <h1 id="sobre">SOBRE MIM</h1>
-                <div  class="sobre">
-                    <article class="sobreText">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum itaque eum consequuntur voluptatum ad, eos dignissimos delectus accusamus, temporibus repellendus vel officia minus perferendis optio earum unde ipsum quisquam voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium alias culpa ex nihil. Aut inventore beatae ab vero facilis reprehenderit eos vel alias id nulla consequatur dignissimos, est, dolorem molestiae?</p>
-                    </article>
-                   
-                    <div class="icon-flot">
-                        <img class="photo" src="media/icons/photo.png" alt="">
-                        <img src="media/icons/icon-html.png" alt="html" class="tec1">
-                        <img src="media/icons/icon-css.png" alt="css" class="tec2">
-                        <img src="media/icons/icon-js.png" alt="js" class="tec3">
+                        <div class="icon-flot">
+                            <img class="photo" src="media/icons/photo.png" alt="">
+                            <img src="media/icons/icon-html.png" alt="html" class="tec1">
+                            <img src="media/icons/icon-css.png" alt="css" class="tec2">
+                            <img src="media/icons/icon-js.png" alt="js" class="tec3">
+                        </div>
                     </div>
+                    <section>
+                        <h2>PAIXÕES</h2>
+                        <ul>
+                            <li>Programação 🖥️</li>
+                            <li>Tecnologia 👌</li>
+                            <li>Games 🎮</li>
+                            <li>Filmes e Séries 📺</li>
+                        </ul>
+                    </section>
+                    <section id="contact" class='contact-container'>
+                        <h2>Contato</h2>
+
+                        <div class='contact-content'>
+
+                            <div class='contact-text'>
+                                <p class='text'>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias eius inventore
+                                    adipisci. Perspiciatis repudiandae ea delectus similique modi neque dicta quo. Vero
+                                    voluptatum, facilis dolor molestias doloribus deleniti debitis expedita.
+                                </p>
+                                <div class='contact-info'>
+                                    <p><img src="media/icons/Icon-call-dark.png" alt="call">(64) 993252497</p>
+                                    <p><img src="media/icons/Icon-email-dark.png" alt="email">eduardoqsilva@outlook.com
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class='contact-qrcode'>
+
+                            </div>
+                        </div>
+
+                        <div class='socials'>
+                            <img src="media/icons/Icon-git-dark.png" alt="gitHub">
+                            <img src="media/icons/Icon-instagram-dark.png" alt="instagram">
+                            <img src="media/icons/Icon-whatsapp-dark.png" alt="whatsapp">
+                        </div>
+                    </section>
                 </div>
-                <h2>PAIXÕES</h2>
-                <ul>
-                    <li>Programação 🖥️</li>
-                    <li>Tecnologia 👌</li>
-                    <li>Games 🎮</li>
-                    <li>Filmes e Séries 📺</li>
-                </ul>
-
-
-                <div id="contact" class='contact-container'>
-                    <h2>Contato</h2>
-                  
-                    <div class='contact-content'>
-                  
-                        <div class='contact-text'>
-                          <p class='text'>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias eius inventore adipisci. Perspiciatis repudiandae ea delectus similique modi neque dicta quo. Vero voluptatum, facilis dolor molestias doloribus deleniti debitis expedita.
-                          </p>
-                          <div class='contact-info'>
-                            <p><img src="media/icons/Icon-call-dark.png" alt="call">(64) 993252497</p>
-                            <p><img src="media/icons/Icon-email-dark.png" alt="email">eduardoqsilva@outlook.com</p>
-                          </div>
-                        </div>
-                  
-                        <div class='contact-qrcode'>
-                            
-                        </div>
-                    </div>
-                  
-                    <div class='socials'>
-                        <img src="media/icons/Icon-git-dark.png" alt="gitHub">
-                        <img src="media/icons/Icon-instagram-dark.png" alt="instagram">
-                        <img src="media/icons/Icon-whatsapp-dark.png" alt="whatsapp">
-                    </div>
-                  </div>
             </div>
         </div>
     </main>
     <footer>
-        <img class="footer-svg" src="media/svg/decals/footer.svg" alt="footer">
+        <div class="footer">
+            <div class="footer-wave-svg">
+                <svg width="100%" height="100%" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 1440 320">
+                    <path fill="#182943" fill-opacity="1"
+                        d="M0,160L60,181.3C120,203,240,245,360,240C480,235,600,181,720,170.7C840,160,960,192,1080,202.7C1200,213,1320,203,1380,197.3L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+                        style="--darkreader-inline-fill:#181a1b;"></path>
+                </svg>
+            </div>
+        </div>
     </footer>
 </body>
+
 </html>

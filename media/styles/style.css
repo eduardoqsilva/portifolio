@@ -16,7 +16,7 @@ body{
 
 header{
     width: 100vw;
-    height: 120vh;
+    height: 150vh;
     background-color: #091A34;
     overflow-y: hidden;
     overflow-x: hidden;
@@ -50,6 +50,7 @@ header{
 }
 .nav a:hover{
     text-shadow: 0px 0px 20px #EB1E9C;
+    transform: scale(1.05);
 }
 
 
@@ -57,6 +58,7 @@ header{
     width: 100vw;
     height: 100vh;
     position: relative;
+    /* z-index: 0; */
     /* overflow-x: hidden; */
     
     /* background-color: aqua; */
@@ -164,41 +166,57 @@ header{
 
 
  /* main  */
-body{
-    overflow-x: hidden;
+
+main{
+    position: relative;
+    /* background-color: rgb(2, 188, 255); */
 }
 .main-cont{
     position: relative;
     /* background-color: #fe0707; */
     width: 100%;
     height: 100%;
-    margin-bottom: 400px;
-    /* height: 700px; */
-
+    z-index: 1;
 }
+
 .content-main{
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
     width: 100%;
     height: 100%;
-    
 }
+
+.wave{
+    position: absolute;
+    /* background-color: #EB1E9C; */
+    top: -300px;
+    width: 100%;
+    height: 300px;
+    z-index: 0;
+    /* overflow-x: hidden; */
+}
+.wave > svg{
+    position: absolute;
+    bottom: -5px;
+}
+.decals{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow-x: hidden;
+    /* background-color: #EB1E9C; */
+}
+
+
 .circ-main{
     position: absolute;
-    right: -290px;
+    right: -390px;
     top: 0;
 }
 .split-main{
     position: absolute;
     bottom: 0;
     left: -500px;
-}
-.wave{
-    position: absolute;
-    /* background-color: #EB1E9C; */
-    top: -150px;
-    width: 100%;
-    overflow-x: hidden;
-    z-index: 1;
 }
 .container{
     /* background-color: #2B56FF; */
@@ -261,7 +279,7 @@ body{
     right: 100px;
 }
 
-.container > ul{
+.container > section > ul{
     margin: 20px 0 20px 60px;
 }
 .contact-container {
@@ -324,12 +342,25 @@ body{
 
 
 footer{
-    position: relative;
-    overflow-x: hidden;
+    height: 200px;
+    width: 100%;
+    /* overflow-x: hidden; */
 }
-.footer-svg{
+.footer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* background-color: yellow; */
+}
+.footer-wave-svg{
     position: absolute;
-    bottom: -20px;
+    bottom: 0px;
+    /* background-color: #eb1e9df9; */
+    width: 100%;
+    height: 200px;
+}
+.footer-wave-svg > svg{
+    position: absolute; 
 }
 
 
@@ -337,6 +368,7 @@ footer{
 
 
 /* barra de rolagem */
+
   /* width */
 ::-webkit-scrollbar {
     width: 10px;
