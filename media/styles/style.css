@@ -366,6 +366,15 @@ footer{
 
 
 
+/* rolagem suave */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
 
 /* barra de rolagem */
 
