@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./src/styles/animations.css">
     <link rel="stylesheet" href="./src/styles/main.css">
     <link rel="stylesheet" href="./src/styles/footer.css">
+    <link rel="stylesheet" href="./src/styles/responsive.css">
 
     <!-- scrool -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -22,7 +23,7 @@
 <body>
 
     <header>
-        <nav data-aos="zoom-out"> 
+        <nav> 
             <a href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60.086" height="34.889" viewBox="0 0 60.086 34.889">
                     <defs>
@@ -40,21 +41,28 @@
                     </g>
                 </svg>
             </a>
-              
-            <ul>
-                <a href="">
-                    <li>Home</li>
-                </a>
-                <a href="">
-                    <li>Sobre</li>
-                </a>
-                <a href="">
-                    <li>Contato</li>
-                </a>
-            </ul>
+
+            
+                <div class="menu-icon">
+                    <span class="trace"></span>
+                    <span class="trace"></span>
+                    <span class="trace"></span>
+                </div>
+                
+            <div class="menu">
+                <ul>
+                    
+                    <li><a href="">Home</a></li>
+                
+                    <li><a href="">Sobre</a></li>
+                
+                    <li><a href="">Contato</a></li>
+                   
+                </ul>
+            </div>
         </nav>
         <section>
-            <div data-aos="zoom-out">
+            <div class="text-header" data-aos="zoom-out">
                 <h2>Olá, meu nome é</h2>
                 <h1>Eduardo Queiroz</h1>
                 <h2>Front-end developer</h2>
@@ -177,7 +185,7 @@
                     </div>
 
                 </div>
-                <div class="img-sobre" data-aos="zoom-in">
+                <div class="img-sobre" >
                     <div class="photo-wrapper">
                         <img src="src/imgs/photo.png" alt="foto de perfil">
 
@@ -219,7 +227,7 @@
                 <h1>Projetos</h1>
                 <div class="wrapper-projects" data-aos="zoom-in">
                     
-                    <div class="item-project h-1 w1">
+                    <div class="item-project">
                         <img src="src/imgs/forca.jpg" alt="">
                         <span>Jogo da forca</span>
                         <div class="web-link">
@@ -243,7 +251,7 @@
                         </div>
                     </div>
 
-                    <div class="item-project h-1 w1">
+                    <div class="item-project">
                         <img src="src/imgs/decodificador.png" alt="">
                         <span>Decodificador e encriptador</span>
                         <div class="web-link">
@@ -267,7 +275,7 @@
                         </div>
                     </div>
 
-                    <div class="item-project h-1 w1">
+                    <div class="item-project">
                         <img src="src/imgs/clima.png" alt="">
                         <span>Clima + wallpaper dinâmico</span>
                         <div class="web-link">
@@ -291,7 +299,7 @@
                         </div>
                     </div>
 
-                    <div class="item-project h-1 w1">
+                    <div class="item-project">
                         <img src="src/imgs/pomodoro.jpg" alt="">
                         <span>Pomodoro timer</span>
                         <div class="web-link">
@@ -464,6 +472,7 @@
 
     <!-- scrool  -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="src/scripts/menu.js"></script>
     <script>
       AOS.init();
     </script>

@@ -57,7 +57,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 200px 0 50px;
+    padding: 0 45px 0 45px;
 }
 nav ul{
     list-style: none;
@@ -67,13 +67,13 @@ nav ul{
     font-size: 1.3rem;
     font-weight: 600;
 }
-nav ul a{
+nav ul li a{
     text-decoration: none;
     color: var(--primary-color);
     transition: 0.2s ease-in-out;
     padding: 10px;
 }
-nav ul a:hover{
+nav ul li a:hover{
     text-decoration: underline;
     text-underline-offset: 10px;
     text-decoration-thickness: 4px;
@@ -85,7 +85,8 @@ nav ul a:hover{
 
 header section{
     max-width: 1000px;
-    width: 90%;
+    width: 100%;
+    padding: 1rem;
     height: 100vh;
     
     margin: auto;
@@ -93,6 +94,7 @@ header section{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    z-index: 0;
 
     font-family: var(--font-highlight);
     font-weight: 900;
@@ -141,6 +143,7 @@ header a{
 }
 
 /* social  */
+
 .header-social{
     position: absolute;
     bottom: 50px;
