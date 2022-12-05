@@ -103,7 +103,112 @@
   }
 }
 
+/* header  */
+@media (max-width: 800px){
+  header section h1{
+    font-size: 4rem;
+  }
+  header section h2:nth-child(1){
+      font-size: 1.5rem;
+  }
+  header section h2:nth-child(3){
+      font-size: 3.5rem;
+  }
+}
+@media (max-width: 600px){
+  header section h1{
+    font-size: 3.5rem;
+  }
+  header section h2:nth-child(1){
+      font-size: 1.5rem;
+  }
+  header section h2:nth-child(3){
+      font-size: 3rem;
+  }
+}
+/* menu  */
+@media (max-width: 600px){
+  .menu-icon {
+    width: 45px;
+    height: 40px;
+    position: relative;
+    z-index: 999;
+  }
+  .menu-icon .trace{
+    display: block;
+    width: 45px;
+    height: 5px;
+    border-radius: 3px;
+    background-color: var(--primary-color);
 
+    position: absolute;
+  }
+  .menu-icon .trace:nth-child(1){
+    top: 0px;
+    transition: 0.2s ease;
+  }
+  .menu-icon .trace:nth-child(2){
+    top: 14px;
+    transition: 0.2s ease;
+  }
+  .menu-icon .trace:nth-child(3){
+    top: 28px;
+    transition: 0.2s ease;
+  }
+  .menu-icon.active .trace:nth-child(1){
+    transform: rotate(45deg) translateY(20px);
+    transition: 0.2s ease;
+  }
+  .menu-icon.active .trace:nth-child(2){
+    transform: scale(0.1);
+    opacity: 0;
+    transition: 0.2s ease;
+  }
+  .menu-icon.active .trace:nth-child(3){
+    transform: rotate(-45deg) translateY(-20px);
+    transition: 0.2s ease;
+  }
+
+
+  nav .menu ul{
+    display: block;
+    width: 100%;
+  }
+  .menu{
+    opacity: 0;
+    display: none;
+  }
+  .menu.active{
+    background-color: var(--header-background-color);
+    padding-top: 80px;
+    text-align: center;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+
+    position: absolute;
+    top: -20px;
+    right: 0;
+    z-index: 998;
+    opacity: 1;
+  }
+  
+  nav ul li{
+    padding: 1rem;
+    border-bottom: 1px solid #fdfdfd2c;
+  }
+  nav ul li:hover{
+    background-color: #081527;
+  }
+  nav ul li:active{
+    background-color: #081527;
+  }
+  nav ul li a:hover{
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 1rem;
+  }
+}
 
 
 
